@@ -15,7 +15,7 @@ The three main scripts are:
 All three scripts assume CUDA is available and load pretrained checkpoints from
 `model_base.pth` and `model_ft.pth`.
 
-
+<img width="4724" height="1442" alt="Image" src="https://github.com/user-attachments/assets/9f6d21fe-7b1d-4ad3-949e-5be5c8a3fdbb" />
 
 ---
 ## Shared Setup

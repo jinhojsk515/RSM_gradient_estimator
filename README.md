@@ -30,13 +30,7 @@ The scripts define and reuse a small DDPM-style diffusion model over 2D points.
 The base distribution is an evenly weighted mixture with component centers arranged as
 a triangle. The reward-tilted target distribution shifts the mixture in the negative x-direction
 and reweights the modes according to the linear reward. The scripts compare gradients
-at noisy intermediate points `x_t`, using the analytic quantity
-
-```text
-grad_x_t log p_tilted(x_t) - grad_x_t log p_reference(x_t)
-```
-
-as the ground-truth value gradient. The experiments focus on a fixed diffusion time
+at noisy intermediate points $x_t$, using the analytic quantity $\nabla_{x_t}\log p_t(x_t) - \nabla_{x_t}\log {p^{\text{ref}}}_t(x_t)$ as the ground-truth value gradient. The experiments focus on a fixed diffusion time
 near `alpha_bar_t = 0.01`, using `T = 500`, `beta_1 = 1e-4`, `beta_T = 0.03`, and a
 sampling interval of 10 reverse steps.
 

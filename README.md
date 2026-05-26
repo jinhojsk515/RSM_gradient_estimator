@@ -1,4 +1,4 @@
-# Reward Score Matching: Value Gradient Experiments in a Toy Diffusion Model
+# Reward Score Matching: Value Gradient Estimation in a Toy Diffusion Model
 
 This directory contains three Python scripts for studying value-gradient estimation in a
 two-dimensional diffusion model. The experiments use a simple Gaussian-mixture setting
